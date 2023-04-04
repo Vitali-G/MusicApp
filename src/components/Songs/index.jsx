@@ -35,7 +35,7 @@ const songs = [
     {title: "Helium", album: "Dreamland", cover: "https://upload.wikimedia.org/wikipedia/en/1/11/Dreamland_%28Glass_Animals%29.png"},
 ]
 
-function Songs() {
+export default function Songs() {
     let allSongs = []   
         
     songs.forEach(s => {
@@ -44,12 +44,10 @@ function Songs() {
             <h3>Song title: {s.title}</h3>
             <h3>Album: {s.album}</h3>
             <img src={s.cover} alt={s.album} /><br />
-            <button>LIKE SONG</button>
+            <button onClick={() => liked}>LIKE SONG</button>
         </div>
         allSongs.push(song)
     })
         return allSongs
     }
-    
-    export default Songs;
     

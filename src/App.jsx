@@ -1,6 +1,5 @@
-// import { useState } from 'react'
-import Band from './Band'
-import Songs from './Songs'
+import { React, useState } from 'react'
+import { Band , Songs} from './components'
 import './App.css'
 
 function App() {

@@ -1,4 +1,4 @@
-function Band() {
+export default function Band() {
 
 const bandName = "Glass Animals"
 const genre = "Electronic rock"
@@ -12,5 +12,3 @@ const intro = "Glass Animals is a British indie rock band formed in Oxford in 20
     </div>
   )
 }
-
-export default Band;
