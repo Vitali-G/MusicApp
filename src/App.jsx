@@ -1,12 +1,14 @@
 import { React, useState } from 'react'
-import { Band , Songs} from './components'
+import { Band, SongList} from './components'
 import './App.css'
+import songData from "../src/assets/songData";
 
 function App() {
+  const [songs, setSongs] = useState(songData);
   return (
     <>
       <Band /> 
-      <Songs />
+      <SongList songs={songs}/>
     </>
   )
 }

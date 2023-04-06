@@ -1,4 +1,4 @@
-const songs = [
+const songData = [
     {title: "Flip", album: "Zaba", cover: "https://upload.wikimedia.org/wikipedia/en/3/32/Glass_animals_zaba.jpg"},
     {title: "Black Mambo", album: "Zaba", cover: "https://upload.wikimedia.org/wikipedia/en/3/32/Glass_animals_zaba.jpg"},
     {title: "Pools", album: "Zaba", cover: "https://upload.wikimedia.org/wikipedia/en/3/32/Glass_animals_zaba.jpg"},
@@ -35,19 +35,5 @@ const songs = [
     {title: "Helium", album: "Dreamland", cover: "https://upload.wikimedia.org/wikipedia/en/1/11/Dreamland_%28Glass_Animals%29.png"},
 ]
 
-export default function Songs() {
-    let allSongs = []   
-        
-    songs.forEach(s => {
-        let song =
-        <div className="Song">
-            <h3>Song title: {s.title}</h3>
-            <h3>Album: {s.album}</h3>
-            <img src={s.cover} alt={s.album} /><br />
-            <button onClick={() => liked}>LIKE SONG</button>
-        </div>
-        allSongs.push(song)
-    })
-        return allSongs
-    }
-    
+
+export default songData;
