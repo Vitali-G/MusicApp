@@ -1,5 +1,5 @@
 import { React, useState } from 'react'
-import { Band, SongList} from './components'
+import { Band, SongList, Song} from './components'
 import './App.css'
 import songData from "../src/assets/songData";
 
@@ -8,7 +8,7 @@ function App() {
   return (
     <>
       <Band /> 
-      <SongList songs={songs}/>
+      {/* <SongList songs={songs}/> */}
     </>
   )
 }
